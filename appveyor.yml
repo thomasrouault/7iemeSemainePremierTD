@@ -12,6 +12,8 @@ test_script:
     mvn test
 
     pip install codecov
+    
+    dir
 
     codecov -f target\surefire-reports\TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml
     
