@@ -9,3 +9,7 @@ test_script:
     mvn test
 
     mvn clean verify
+    
+    pip install codecov
+    
+    codecov -f .\ConvertedReport.xml -X gcov
