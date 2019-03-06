@@ -1,0 +1,15 @@
+version: 1.0.{build}
+image: Visual Studio 2015
+build_script:
+- cmd: mvn clean install
+test_script:
+- cmd: >-
+    mvn --version
+
+    mvn test
+
+    mvn clean verify
+    
+    pip install codecov
+    
+    codecov -f .\ConvertedReport.xml -X gcov
