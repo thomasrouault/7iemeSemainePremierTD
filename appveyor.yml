@@ -12,13 +12,11 @@ test_script:
     mvn test
 
     pip install codecov
-    
-    dir
      
     cd target/surefire-reports
     
     ls
     
-    codecov -f .\TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml
+    codecov -f .\TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml  -X gcov
     
     bash <(curl -s https://codecov.io/bash)
