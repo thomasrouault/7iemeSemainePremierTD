@@ -1,7 +1,5 @@
 version: 1.0.{build}
 image: Visual Studio 2015
-install:
-- cmd: mvn package
 build_script:
 - cmd: mvn clean install
 test_script:
@@ -9,3 +7,5 @@ test_script:
     mvn --version
 
     mvn test
+
+    mvn clean verify
