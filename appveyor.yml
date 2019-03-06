@@ -13,7 +13,7 @@ test_script:
 
     pip install codecov
      
-    cd target/surefire-reports
+    cd target/surefire-reports/
     
     ls
     
