@@ -11,5 +11,5 @@ test_script:
 
     mvn test
     
-after_success:
+on_finish:
   - bash <(curl -s https://codecov.io/bash)
