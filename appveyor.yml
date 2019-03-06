@@ -17,6 +17,6 @@ test_script:
     
     ls
     
-    codecov -f .\TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml  -X gcov
+    codecov -f .TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml
     
     bash <(curl -s https://codecov.io/bash)
