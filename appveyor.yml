@@ -15,7 +15,7 @@ test_script:
     
     dir
      
-    cd /target/surefire-reports
+    cd target/surefire-reports
     
     ls
     
