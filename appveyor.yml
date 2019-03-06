@@ -13,6 +13,6 @@ test_script:
 
     pip install codecov
 
-    codecov -f .\target\surefire-reports\TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml
+    codecov -f \target\surefire-reports\TEST-SeptiemeSemaine.FirstTD.firstClassTest.xml
     
     bash <(curl -s https://codecov.io/bash)
