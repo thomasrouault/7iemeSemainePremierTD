@@ -1,0 +1,18 @@
+# Test against the latest version of this java version
+environment:
+  stack: jdk 1.8 [version]
+
+# Install scripts. (runs after repo cloning)
+install:
+  # Get the latest stable version of maven
+  - ps: mvn package
+
+# Post-install test scripts.
+test_script:
+  # Output useful info for debugging.
+  - mvn --version
+  # run tests
+  - mvn test
+
+# To build.
+build: mvn clean install
