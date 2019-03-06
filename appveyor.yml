@@ -1,19 +1,11 @@
-# Test against the latest version of this java version
-environment:
-  stack: jdk 1.8
-
-# Install scripts. (runs after repo cloning)
+version: 1.0.{build}
+image: Visual Studio 2015
 install:
-  # Get the latest stable version of maven
-  - ps: mvn package
-
-# To build.
-build: mvn clean install
-
-# Post-install test scripts.
+- cmd: mvn package
+build_script:
+- cmd: mvn clean install
 test_script:
-  # Output useful info for debugging.
-  - mvn --version
-  # run tests
-  - mvn test
+- cmd: >-
+    mvn --version
 
+    mvn test
