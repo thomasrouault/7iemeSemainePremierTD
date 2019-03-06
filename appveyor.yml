@@ -1,6 +1,6 @@
 # Test against the latest version of this java version
 environment:
-  stack: jdk 1.8 [version]
+  stack: jdk 1.8
 
 # Install scripts. (runs after repo cloning)
 install:
