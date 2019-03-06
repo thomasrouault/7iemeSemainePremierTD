@@ -10,6 +10,5 @@ test_script:
     mvn --version
 
     mvn test
-    
-on_finish:
-  - bash <(curl -s https://codecov.io/bash)
+
+    bash <(curl -s https://codecov.io/bash)
