@@ -7,6 +7,9 @@ install:
   # Get the latest stable version of maven
   - ps: mvn package
 
+# To build.
+build: mvn clean install
+
 # Post-install test scripts.
 test_script:
   # Output useful info for debugging.
@@ -14,5 +17,3 @@ test_script:
   # run tests
   - mvn test
 
-# To build.
-build: mvn clean install
