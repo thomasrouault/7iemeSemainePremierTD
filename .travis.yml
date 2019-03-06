@@ -5,6 +5,7 @@ jdk:
   - openjdk8
   
 script:
+ - mvn --version
  - mvn clean package
  - mvn test
  - mvn cobertura:cobertura
